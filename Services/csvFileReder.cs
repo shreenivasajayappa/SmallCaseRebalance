@@ -13,7 +13,7 @@ public class csvFileReder
         IEnumerable<Stock> stockList = new List<Stock>();
         var configuration = new CsvConfiguration(CultureInfo.InvariantCulture)
         {
-            HasHeaderRecord = false,
+            HasHeaderRecord = true,
             HeaderValidated = null
         };
 
@@ -21,10 +21,10 @@ public class csvFileReder
         using (var fileReader = new StreamReader(stream))
         using (var csvReader = new CsvReader(fileReader, configuration)){
 
-            while (fileReader.Peek()>=0)
-            {
-                if(fileReader.ReadLine().ToLower().Contains("name,ticker")) break;
-            }     
+            //while (fileReader.Peek()>=0)
+            //{
+            //    if(fileReader.ReadLine().ToLower().Contains("name,ticker")) break;
+            //}     
             
             stockList = csvReader.GetRecords<Stock>().ToList();
 

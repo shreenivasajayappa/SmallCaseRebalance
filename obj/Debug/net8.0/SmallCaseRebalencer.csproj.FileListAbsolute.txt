@@ -42,3 +42,4 @@ C:\Users\SEENA\SmallCaseRebalencer\SmallCaseRebalencer\SmallCaseRebalencer\obj\D
 C:\Users\SEENA\SmallCaseRebalencer\SmallCaseRebalencer\SmallCaseRebalencer\obj\Debug\net8.0\SmallCaseRebalencer.genruntimeconfig.cache
 C:\Users\SEENA\SmallCaseRebalencer\SmallCaseRebalencer\SmallCaseRebalencer\obj\Debug\net8.0\ref\SmallCaseRebalencer.dll
 C:\Users\SEENA\SmallCaseRebalencer\SmallCaseRebalencer\SmallCaseRebalencer\bin\Debug\net8.0\CsvHelper.dll
+C:\Users\SEENA\SmallCaseRebalencer\SmallCaseRebalencer\SmallCaseRebalencer\obj\Debug\net8.0\SmallCaseRebalencer.sourcelink.json
