@@ -1,5 +1,6 @@
 ﻿using System.Globalization;
 using CsvHelper;
+using CsvHelper.Configuration;
 using SmallCaseRebalencer.Modules;
 
 namespace SmallCaseRebalencer.Services;
@@ -10,15 +11,21 @@ public class csvFileReder
     {
 
         IEnumerable<Stock> stockList = new List<Stock>();
+        var configuration = new CsvConfiguration(CultureInfo.InvariantCulture)
+        {
+            HasHeaderRecord = false,
+            HeaderValidated = null
+        };
+
         using (var stream = file.OpenReadStream())
         using (var fileReader = new StreamReader(stream))
-        using (var csvReader = new CsvReader(fileReader, CultureInfo.InvariantCulture))
-        {
-            while (fileReader.Peek() >= 0)
-            {
-                if (fileReader.ReadLine().Contains("Name,Ticker,Current ")) break;
-            }
+        using (var csvReader = new CsvReader(fileReader, configuration)){
 
+            while (fileReader.Peek()>=0)
+            {
+                if(fileReader.ReadLine().ToLower().Contains("name,ticker")) break;
+            }     
+            
             stockList = csvReader.GetRecords<Stock>().ToList();
 
         }

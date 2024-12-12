@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SmallCaseRebalencer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0c91b3469f3ce3677c564dbc4c69d0cf96fd95ac")]
 [assembly: System.Reflection.AssemblyProductAttribute("SmallCaseRebalencer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SmallCaseRebalencer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

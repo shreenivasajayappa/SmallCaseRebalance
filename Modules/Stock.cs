@@ -5,19 +5,26 @@ namespace SmallCaseRebalencer.Modules;
 public class Stock
 {
     
+    //[Name("Name")]
     [Index(0)]
     public string name { get; set; }
+    //[Name("Ticker")]
     [Index(1)]
     public string ticker { get; set; }
+    //[Name("Current Price (Rs.)")]
     [Index(2)]
     public string currentPrice { get; set; } 
+    //[Name("Avg Buy Price (Rs.)\n")]
     [Index(3)]
-    public decimal avgBuyPrice { get; set; } 
+    public string avgBuyPrice { get; set; } 
+    //[Name("Returns (%)")]
     [Index(4)]
-    public decimal  returns{ get; set; } 
+    public string  returns{ get; set; } 
+    //[Name("Weightage")]
     [Index(5)]
-    public double  weightage{ get; set; } 
+    public string  weightage{ get; set; } 
+    //[Name("Shares")]
     [Index(6)]
-    public double  shares{ get; set; } 
+    public string  shares{ get; set; } 
     
 }
