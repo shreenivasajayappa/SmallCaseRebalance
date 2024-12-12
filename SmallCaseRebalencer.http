@@ -1,0 +1,6 @@
+@SmallCaseRebalencer_HostAddress = http://localhost:5057
+
+GET {{SmallCaseRebalencer_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
