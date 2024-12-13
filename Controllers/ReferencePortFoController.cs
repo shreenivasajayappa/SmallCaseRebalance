@@ -4,6 +4,7 @@ using CsvHelper;
 using Microsoft.AspNetCore.Mvc;
 using OfficeOpenXml;
 using SmallCaseRebalencer.Modules;
+using SmallCaseRebalencer.Services;
 
 namespace SmallCaseRebalencer.Controllers;
 
@@ -13,11 +14,11 @@ public class ReferencePortFoController : Controller
     {
     }
 
+    private csvFileReder reader = new csvFileReder(); 
 
     [HttpPost("upload")]
-    public async void Upload(IFormFile? file)
+    public async Task<IActionResult> Upload(IFormFile? file)
     {
-        
-      
+       return Ok(reader.ReadTheStocks(file));
     }
 }
