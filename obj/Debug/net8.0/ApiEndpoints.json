@@ -1,0 +1,23 @@
+[
+  {
+    "ContainingType": "SmallCaseRebalencer.Controllers.ReferencePortFoController",
+    "Method": "Upload",
+    "RelativePath": "upload",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "RefrencePortfolio",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      },
+      {
+        "Name": "CurrentPortfolio",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

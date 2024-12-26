@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\SEENA\\SmallCaseRebalencer\\SmallCaseRebalencer\\SmallCaseRebalencer\\SmallCaseRebalencer.csproj": {}
+    "C:\\Users\\shreej\\source\\repos\\SmallCaseRebalance\\SmallCaseRebalencer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\SEENA\\SmallCaseRebalencer\\SmallCaseRebalencer\\SmallCaseRebalencer\\SmallCaseRebalencer.csproj": {
+    "C:\\Users\\shreej\\source\\repos\\SmallCaseRebalance\\SmallCaseRebalencer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\SEENA\\SmallCaseRebalencer\\SmallCaseRebalencer\\SmallCaseRebalencer\\SmallCaseRebalencer.csproj",
+        "projectUniqueName": "C:\\Users\\shreej\\source\\repos\\SmallCaseRebalance\\SmallCaseRebalencer.csproj",
         "projectName": "SmallCaseRebalencer",
-        "projectPath": "C:\\Users\\SEENA\\SmallCaseRebalencer\\SmallCaseRebalencer\\SmallCaseRebalencer\\SmallCaseRebalencer.csproj",
-        "packagesPath": "C:\\Users\\SEENA\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\SEENA\\SmallCaseRebalencer\\SmallCaseRebalencer\\SmallCaseRebalencer\\obj\\",
+        "projectPath": "C:\\Users\\shreej\\source\\repos\\SmallCaseRebalance\\SmallCaseRebalencer.csproj",
+        "packagesPath": "C:\\Users\\shreej\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\shreej\\source\\repos\\SmallCaseRebalance\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\SEENA\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\shreej\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -34,7 +38,13 @@
           "warnAsError": [
             "NU1605"
           ]
-        }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -72,7 +82,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

@@ -1,0 +1,49 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "SmallCaseRebalencer",
+    "version": "1.0"
+  },
+  "paths": {
+    "/upload": {
+      "post": {
+        "tags": [
+          "ReferencePortFo"
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "RefrencePortfolio": {
+                    "type": "string",
+                    "format": "binary"
+                  },
+                  "CurrentPortfolio": {
+                    "type": "string",
+                    "format": "binary"
+                  }
+                }
+              },
+              "encoding": {
+                "RefrencePortfolio": {
+                  "style": "form"
+                },
+                "CurrentPortfolio": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    }
+  },
+  "components": { }
+}

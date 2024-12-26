@@ -2,6 +2,7 @@
 using System.Globalization;
 using CsvHelper;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.FileProviders;
 using OfficeOpenXml;
 using SmallCaseRebalencer.Modules;
 using SmallCaseRebalencer.Services;
@@ -17,8 +18,14 @@ public class ReferencePortFoController : Controller
     private csvFileReder reader = new csvFileReder(); 
 
     [HttpPost("upload")]
-    public async Task<IActionResult> Upload(IFormFile? file)
+    public async Task<IActionResult> Upload(IFormFile? RefrencePortfolio, IFormFile CurrentPortfolio)
     {
-       return Ok(reader.ReadTheStocks(file));
+        if (RefrencePortfolio == null || CurrentPortfolio == null)
+        {
+            return BadRequest("Please upload the files");
+        }
+        var referencePortfolio = reader.ReadTheStocks(RefrencePortfolio, CurrentPortfolio);
+        return Ok(referencePortfolio);
+   
     }
 }

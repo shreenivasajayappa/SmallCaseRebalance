@@ -1,11 +1,12 @@
 {
   "Version": 1,
-  "Hash": "JltKJcHLxvCWGiB/8V7lDVqDqV5PcRPWw+MSs/uyWQI=",
+  "Hash": "pg76+PUH4aUEXdn1+jDRPHyroN7UWPyl+XdYAYMkBrM=",
   "Source": "SmallCaseRebalencer",
   "BasePath": "_content/SmallCaseRebalencer",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [],
-  "Assets": []
+  "Assets": [],
+  "Endpoints": []
 }
